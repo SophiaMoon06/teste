@@ -395,6 +395,22 @@ line-height: 1.8;
         font-size: 1.3rem;
     }
 
+.mercado .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+ }
+
+.mercado .box-container .box{
+    padding:3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    box-shadow: var(--box-shadow);
+}
+
+
+
 
 /* PRODUTOS */  
 
