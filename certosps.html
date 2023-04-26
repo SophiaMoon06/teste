@@ -1,0 +1,317 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Prototipo_Menu</title> 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+    <link rel="stylesheet" href="roseo.css"> 
+
+</head> 
+
+<body> 
+    
+<header> 
+    <input type="checkbox" name="" id="toggler"> 
+    <label for="toggler" class="fas fa-bars"></label> 
+
+    
+     <a href="#"class="logo"><i class="fas fa-shopping-basket"></i>Mercados Regionais<span>.</span></a>
+
+     <nav class="navbar"> 
+        <a href="#menu">Inicio</a> 
+        <a href="#sobre">Sobre</a> 
+        <a href="#mercados">Mercados</a> 
+        <a href="#produtos">Produtos</a> 
+        <a href="#login">Login</a>  
+        <a href="#contato">Contato</a> 
+        </nav> 
+
+    <!--icons topo do site--> 
+
+    <div class="icons"> 
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div> 
+
+       <!--barra de pesquisa--> 
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="pesquise aqui...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+       <!--carrinho--> 
+
+    <div class="shopping-cart">
+        <div class="box">
+        <i class="fas fa-trash"></i>
+        <a href="https://im.ge/i/L15NcP"><img src="https://i.im.ge/2023/04/13/L15NcP.icon-1.th.png" alt="icon-1"></a>
+        <div class="content">
+        <h3>watermelon</h3>
+        <span class="price">$4.99/-</span>
+        <span class="quantity">qty: 1</span>
+        </div>
+        </div>
+
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <a href="https://im.ge/i/L15NcP"><img src="https://i.im.ge/2023/04/13/L15NcP.icon-1.th.png" alt="icon-1"></a>
+            <div class="content">
+            <h3>watermelon</h3>
+            <span class="price">$4.99/-</span>
+            <span class="quantity">qty: 1</span>
+            </div>
+        </div>
+
+        <div class="total">total: R$19.99/-</div>
+        <a href="#" class="btn">Comprar</a>
+    </div>
+
+  <!--   <form action="" class="login-form">
+        <h3>Faça seu Login</h3>
+        <input type="email" placeholder="escreva seu email" class="box">
+        <input type="password" placeholder="escreva sua senha" class="box">
+        <input type="submit" vallue="login agora" class="btn">       
+    </form> -->
+
+    </header> 
+    
+
+    <!--MENU --> 
+    
+    <section class="menu" id="menu">
+        <div class="content"> 
+            <h3>Venda e compra</h3> 
+            <span>Encontre os melhores mercados perto da sua casa!.</span> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ut laboriosam rerum suscipit a, consequuntur sequi quo vitae eos. Possimus corporis sequi, nisi dolorem harum saepe aut. Quia, veniam quis! </p> 
+            <a href="#"class="btn">Compre agora</a>
+        </div> 
+    </section> 
+    
+    
+    <!--SOBRE --> 
+    
+    <section  class="sobre" id="sobre"> 
+        <h1 class="heading"><span>Sobre</span> o site</h1> 
+        <div class="row"> 
+            <div class="video-container"> 
+                <video src="images/about-vid.mp4" loop autoplay muted></video> 
+                <h3> Melhores recomendações para você</h3> 
+            </div> 
+        
+            <div class="content"> 
+                <h3>Qual você escolhe?</h3> 
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos id et totam quaerat exercitationem excepturi, ab in animi rerum enim ullam dolore perspiciatis maiores autem placeat consectetur ut sequi ipsum esse iste! Accusamus provident ea iure explicabo quaerat rerum voluptas.</p> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates quae perspiciatis quaerat blanditiis totam veniam eius fugit, numquam voluptatum.</p> 
+                <a href="#"class="btn">Ler mais</a> 
+            </div> 
+        </section> 
+
+
+<!--ICONS --> 
+
+    <section class="icons-container">  
+
+    <div class="icons">
+        <a href="https://im.ge/i/L15NcP"><img src="https://i.im.ge/2023/04/13/L15NcP.icon-1.th.png" alt="icon-1"></a>
+            <div class="info">  
+                <h3>Delivery Gratis</h3>  
+               <span>Em todos os locais</span> 
+            </div>
+    </div>  
+    </section>
+ 
+
+    <section class="icons-container">  
+
+            <div class="icons">
+                <img src="https://i.im.ge/2023/04/13/L15ACm.icon-2.th.png" alt="icon-2"></a>
+                 <div class="info">  
+                    <h3>Até 10 dias para o retorno</h3>  
+                    <span>Rembolso garantido</span> 
+                </div>
+            </div>  
+        </section>
+
+        <section class="icons-container">  
+
+            <div class="icons">
+                <img src="https://i.im.ge/2023/04/13/L15Cvr.icon-3.th.png" alt="icon-3"></a> 
+                <div class="info">
+                    <h3>Agendamento ou pronta entrega</h3>
+                    <span>O que achar melhor</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="icons-container">  
+
+            <div class="icons">
+                <img src="https://i.im.ge/2023/04/13/L15clc.icon-4.th.png" alt="icon-4"></a>
+                <div class="info">
+                    <h3>Segurança de pagamentos</h3>
+                    <span>Proteção ao pagamento</span>
+                </div>
+            </div> 
+        </section>
+ 
+ 
+
+
+
+    <section class="icons-container">  
+
+        <div class="icons">
+            <img src="https://i.im.ge/2023/04/13/L15NcP.icon-1.th.png" alt="icon-1"></a>
+                <div class="info">  
+                    <h3>Delivery Gratis</h3>  
+                   <span>Em todos os locais</span> 
+                </div>
+        </div> 
+
+    </section>
+    
+//////////////////
+
+<section class="mercado" id="mercado">
+
+
+<h1 class="heading"> our <span>features</span> </h1>
+
+<div class="box-container">
+    
+<div class="box">
+<img src="https://i.im.ge/2023/04/13/L15clc.icon-4.th.png" alt="">
+<h3>fresh and organic</h3>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+
+<a href="#" class="btn">read more</a>
+</div>
+
+
+<div class="box">
+<img src="https://i.im.ge/2023/04/13/L15clc.icon-4.th.png" alt="">
+<h3>free delivery</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+
+<a href="#" class="btn">read more</a>
+</div>
+
+<div class="box">
+    <img src="https://i.im.ge/2023/04/13/L15clc.icon-4.th.png" alt="">
+    <h3>free delivery</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, earum!</p>
+    
+    <a href="#" class="btn">read more</a>
+</div>
+
+</div>
+
+<!-- ICONS 
+
+<section class="icons-container"> 
+<imag src="imagem/icon-1.png" alt=""> 
+<div class="info"> 
+<h3>Free delivery</h3> 
+<span>On all orders</span> 
+</div> 
+
+<imag src="imagem/icon-2.png" alt=""> 
+<div class="info"> 
+<h3>Até 10 dias para o retorno</h3> 
+<span>Rembolso garantido</span> 
+</div> 
+
+<imag src="imagem/icon-3.png" alt=""> 
+<div class="info"> 
+<h3>Agendamento ou pronta entrega</h3> 
+<span>O que achar melhor</span> 
+</div> 
+
+<imag src="imagem/icon-4.png" alt=""> 
+<div class="info"> 
+<h3>Segurança de pagamentos</h3> 
+ <span>Proteção ao pagamento</span> 
+</div> 
+</section> --> 
+
+
+<!-- produtos --> 
+
+  <section class="produtos" id="produtos"> 
+    <h1 class="heading"> Ultimos <span> produtos</span></h1>  
+
+    <div class="box-container"> 
+        
+    <!-- <div class="wrapper"> -->
+            
+        <div class="box">
+            <span class="discount">-10%</span> 
+            <div class="image"> 
+            <img src="images/icon-1.png" alt=""> 
+             <!--        <h3>item</h3> -->
+             <!-- <div class="price"> R$4.99/- - 10.99/-</div> -->
+                <div class="icons"> 
+                    <a href="#" class="fas fa-heart"></a> 
+                    <a href="#" class="cart-btn">ADD CARRINHO</a> 
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+                
+        </div>
+
+                <div class="content"> 
+                    <h3>Pote de flor</h3>
+                    <div class="price">R$12.99  <span>R$15.99</span></div> 
+                    <div class="desc" id="desc"><h1>(Lorem ipsagnam, culpa.)</h1></div>
+          <!--      <div class="desc" id="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, culpa.</div> -->
+                </div> 
+            </div>
+    </div>
+
+    
+<section class="produtos" id="produtos">  
+    
+    <h1 class="heading"> ULTIMOS <span> PRODUTOS</span></h1>   
+
+<div class="swiper product-slider">  
+    
+    <div class="swiper-wrapper">
+        
+        <div class="swiper-slide box">  
+               <!-- <span class="discount">-10%</span> -->
+              <img src="images/icon-1.png" alt=""> 
+             <h3>Pote de flor</h3>
+              <div class="price">R$12.99  <!-- <span>R$15.99</span> --></div>
+
+             <div class="stars">
+                <i  class="fas fa-star"></i>
+                <i  class="fas fa-star"></i>
+                <i  class="fas fa-star"></i>
+                <i  class="fas fa-star"></i>
+                <i  class="fas fa-star-half-alt"></i>
+             </div>
+
+             <a href="#" class="btn">add to cart</a>
+
+                <!-- <div class="icons">  
+                <a href="#" class="fas fa-heart"></a>  
+                <a href="#" class="cart-btn"></a>  
+                <a href="#" class="fas fa-share"></a>   --> 
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</body> 
+</html>
