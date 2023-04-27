@@ -8,7 +8,7 @@
     --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
     --border:.2rem solid rgba(0,0,0,.1);
     --outline:.1rem solid rgba(0,0,0,.1);
-    --outline-houver:.2rem solid var(--black);
+    --outline-hover:.2rem solid var(--black);
 }
 
 
@@ -43,17 +43,15 @@
         padding-bottom: 3rem;
         font-size: 3.5rem;
         color: var(--black);
-        margin: 2rem 0;
-        background: rgb(124, 174, 231);
     }
 
     
     .heading span{
-        color: var(--blue);
+        background: var(--blue);
         color: #fff;
         display: inline-block;
         padding: .5rem 3rem;
-        clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50% 0% 0%);
+        clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
     }
 
     .btn{
@@ -395,33 +393,61 @@ line-height: 1.8;
         font-size: 1.3rem;
     }
 
-.mercado .box-container{
+
+/* MERCADO */
+
+.features .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
  }
 
-.mercado .box-container .box{
+.features .box-container .box{
     padding:3rem 2rem;
     background: #fff;
     outline: var(--outline);
     outline-offset: -1rem;
+    text-align: center;
     box-shadow: var(--box-shadow);
+}
+
+.features .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.features .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+
+
+.features .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+
+.features .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--light-color);
 }
 
 
 
 
-/* PRODUTOS */  
+/* PRODUcTs */  
 
 /* 
-.produtos .box-container{ 
+.products .box-container{ 
     display: flex; 
     flex-wrap:wrap; 
     gap: 1.5; 
 } 
 
-.produtos .box-container .box{ 
+.products .box-container .box{ 
     display: flex; 
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1); 
     border-radius: .5rem; 
@@ -429,7 +455,7 @@ line-height: 1.8;
     position: relative; 
 } 
 
-.produtos .box-container .box .discount{ 
+.products .box-container .box .discount{ 
     position: absolute; 
     top: 1rem; left: 1rem; 
     padding: .7rem 1rem; 
@@ -440,29 +466,29 @@ line-height: 1.8;
     border-radius: .5rem; 
 } 
 
-.produtos .box-container .box .discount .image{ 
+.products .box-container .box .discount .image{ 
     position: relative; 
     text-align: center; 
     padding-top: 2rem; 
     overflow: hidden; 
 } 
 
-.produtos .box-container .box .image img{ 
+.products .box-container .box .image img{ 
     height: 25rem; 
 } 
 
 
-.produtos .box-container .box:hover .image img{ 
+.products .box-container .box:hover .image img{ 
     transform: scale(1.1); 
 } 
 
-.produtos .box-container .box .image .icons{ 
+.products .box-container .box .image .icons{ 
     position: absolute; 
     bottom: 0;left: 0; right: 0; 
     display: flex; 
 } 
 
-.produtos .box-container .box .image .icons a{ 
+.products .box-container .box .image .icons a{ 
     height: 5rem; 
     line-height: 5rem; 
     font-size: 2rem; 
@@ -471,54 +497,54 @@ line-height: 1.8;
     color: #fff; 
 } 
 
-.produtos .box-container .box .image .icons .cart-btn{ 
+.products .box-container .box .image .icons .cart-btn{
     border-left: .1rem solid #fff7; 
     border-right: .1rem solid #fff7; 
     width: 100%; 
 } */
 
-.produtos .product-slider{
+.products .product-slider{
     padding: 1rem;
 }
 
-.produtos .product-slider:first-child{
+.products .product-slider:first-child{
     margin-bottom: 2rem;
 }
 
-.produtos .product-slider .box{
+.products .product-slider .box{
     background: #fff;
     border-radius: .5rem;
     text-align: center;
     padding:3rem 2rem;
     outline-offset: -1rem;
-    outline: var(--blue);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
+    outline: var(--outline);
+    box-shadow:var(--black);
     transition: .2s linear;
 }
 
-.produtos .product-slider .box:hover{
+.products .product-slider .box:hover{
     outline-offset: 0rem;
-     outline: var(--outline-hover);
+    outline: var(--outline-hover);
 }
 
 
-.produtos .product-slider .box img{
+.products .product-slider .box img{
     height: 20rem;
 }
 
-.produtos .product-slider .box h3{
+.products .product-slider .box h3{
     font-size: 2.5rem;
-    color: #333;
+    color: var(--black);
 }
 
-.produtos .product-slider .box .price{
+.products .product-slider .box .price{
     font-size: 2rem;
-    color: #666;
+    color: var(--black);
     padding: .5rem 0;
 }
 
 
-.produtos .product-slider .box .stars i{
+.products .product-slider .box .stars i{
     font-size: 1.7rem;
     color: var(--blue);
     padding: .5rem 0;
